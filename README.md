@@ -2,7 +2,7 @@
 
 This dataset was introduced in the 2025 ISMIR paper "Barwise Section Boundary Detection in Symbolic Music Using Convolutional Neural Networks"
 - Paper
-- Code and models
+- [Code and models](https://github.com/omareldeeb/midi-msa)
 
 In the v1.0.0 folder you will find the SLMS, which consists of human section-level annotations of 6134 songs found in the metadata of files within the [Lakh MIDI dataset](https://colinraffel.com/projects/lmd/). The MIDI files themselves are available in the Lakh MIDI dataset.
 
@@ -17,3 +17,17 @@ We note that v1.0.0 of the SLMS is a _record_ of information found within the La
 - A small percentage of the songs in the SLMS v.1.0.0 have annotations that are at least somewhat inconsistent with the [SALAMI](https://github.com/DDMAL/salami-data-public) guidelines for uppercase (section-level) annotations, and are more similar to the SALAMI guidelines for lowercase (phrase-level) annotations. Future work will involve creating two sets of annotations (section-level and phrase-level) for each such file.
 
 - The SLMS is a collection of markers which indicate boundaries between sections - nothing more. In some cases, these markers have associated text fields indicating function (e.g., "verse", "chorus", etc). We have not examined the correctness of these text fields.
+
+# How to cite
+
+If you use the SLMS in your research, please cite the paper where it was introduced:
+```
+@inproceedings{MIDIMSA,
+title = {{Barwise Section Boundary Detection in Symbolic Music Using Convolutional Neural Networks}},
+author = {Omar Eldeeb and Martin E. Malandro},
+booktitle = {{Proc. 26th Int. Society for Music Information Retrieval Conf.}},
+year = 2025,
+address = {Daejeon, South Korea},
+pages = {},
+}
+```
